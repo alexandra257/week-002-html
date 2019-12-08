@@ -1,6 +1,57 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <title>To Do List</title>
     </head>
     <body>
+        <header> 
+            <h1>My To Do List</h1>
+        </header>
+
+        <section>
+            <form>
+                TASK:
+                <input type="text" placeholder="Enter your task here" size="60"> 
+                <button type="button">Add!</button> 
+                <br />
+                <br />
+                SET PRIORITY:
+                <input type="radio" name="priority" value="Low" checked> Low
+                <input type="radio" name="priority" value="Medium"> Medium
+                <input type="radio" name="priority" value="High"> High            
+            </form>
+        </section>
+        <div>
+            <br />
+           
+
+           
+                <table border="black">
+                        <thead> 
+                                <col width="80">
+                                <col width="400">
+                                <col width="100">
+                            <tr> 
+                                <th>Priority
+                                <th>To Do
+                                <th> Completed
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>*Priority Here*<br />
+                                <td> My to do will appear here <br />
+                                <td> <input type="checkbox" name="completed" value="Check"> <br />
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+
+        </div>
+
+
     </body>
+
 </html>
