@@ -10,15 +10,16 @@
 
         <section>
             <form>
+                SET PRIORITY:
+                <input type="radio" name="priority" value="Low" checked> !
+                <input type="radio" name="priority" value="Medium"> !!
+                <input type="radio" name="priority" value="High"> !!! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                DATE DUE:
+                <input type="date" name="chosenDate"> <br/>
+                <br />
                 TASK:
                 <input type="text" placeholder="Enter your task here" size="60"> 
-                <button type="button">Add!</button> 
-                <br />
-                <br />
-                SET PRIORITY:
-                <input type="radio" name="priority" value="Low" checked> Low
-                <input type="radio" name="priority" value="Medium"> Medium
-                <input type="radio" name="priority" value="High"> High            
+                <button type="button">Add to list!</button> 
             </form>
         </section>
         <div>
@@ -30,6 +31,7 @@
                                 <col width="80">
                                 <col width="400">
                                 <col width="100">
+                                <col width="80">
                             <tr> 
                                 <th>Date Due
                                 <th>To Do
@@ -103,6 +105,7 @@
                                 <col width="80">
                                 <col width="400">
                                 <col width="100">
+                                <col width="80">
                             <!-- <tr> 
                                 <th>Date Due
                                 <th>To Do
