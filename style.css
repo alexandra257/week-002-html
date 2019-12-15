@@ -1,10 +1,7 @@
 body {
-    background-color:red;
-    color: #FFFFFF;
+ 
 }
 
-
-
-.due-soon{
-    background-color:red;
+#title{
+background-color: lightblue;
 }
