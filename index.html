@@ -7,6 +7,10 @@
         <!--My Stylesheet link below-->
         <link href="week-002-html/style.css" rel="stylesheet" type="text/css" />
 
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
         <title>To Do List</title>
     </head>
     <body>
@@ -18,10 +22,7 @@
 <nav class="navbar navbar-light navbar-expand-lg navbar-dark bg-dark">
 
 <!--RENDER THE BRAND FIRST: Will display this first and to the left-->
-        <a class="navbar-brand" href="">Lotus</a>
-
-
-
+        <a class="navbar-brand" href="">Lotus Flow</a>
     <!--CREATING THE HAMBURGER NAV BUTTON FOR WHEN SCREEN IS NARROWER: The 'id' allows us to target a specific div to expand and collapse-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,163 +44,24 @@
         </div>
     </nav>
 
-
-
-<!-- 
-        <header> 
-            <h1>My To Do List</h1>
-        </header> -->
-
-
-        <nav class="navbar navbar-expand-lg">
-                <ul class="navbar-nav">
-                    <li="nav-item">
-                        <a class="nav-link" href="">Contact</a>
-                    </li>
-                    <li="nav-item">
-                        <a class="nav-link" href="">Pricing</a>
-                    </li>
-                    <li="nav-item">
-                        <a class="nav-link" href="">Download</a>
-                    </li>
-                </ul>
-                </nav>
-
-        <section>
-            <form>
-                SET PRIORITY:
-                <input type="radio" name="priority" value="Low" checked> !
-                <input type="radio" name="priority" value="Medium"> !!
-                <input type="radio" name="priority" value="High"> !!! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                DATE DUE:
-                <input type="date" name="chosenDate"> <br/>
-                <br />
-                TASK:
-                <input type="text" placeholder="Enter your task here" size="60"> <br />
-                <br />
-                ADDITIONAL NOTES: <br /><textarea name=“message”></textarea>
-                <button type="button">Add to list!</button> 
-            </form>
-        </section>
-        <div>
-            <br />
-
-            <!--SOON DUE PRIORITY TABLE COMPONENT-->
-            <div class="due-soon"></div>
-                <table border="black">
-                        <thead> 
-                                <col width="80">
-                                <col width="400">
-                                <col width="100">
-                                <col width="80">
-                            <tr> 
-                                <th>Date Due
-                                <th>To Do
-                                <th>Priority
-                                <th>Completed
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Date here<br />
-                                <td>My to do will appear here <br />
-                                <td>! / !! / !!! <br />
-                                <td> <input type="checkbox" name="completed" value="Check"> <br />
-                            </tr>
-                            <tr>
-                                <td>Date here<br />
-                                <td>My to do will appear here <br />
-                                <td>! / !! / !!! <br />
-                                <td> <input type="checkbox" name="completed" value="Check"> <br />
-                            </tr>
-                        </tbody>
-                    </table>
-                   <br />
-                </div>
-            <!--SOON DUE PRIORITY TABLE COMPONENT-->
-                <table border="black">
-                        <thead> 
-                                <col width="80">
-                                <col width="400">
-                                <col width="100">
-                                <col width="80">
-                            <!-- <tr> 
-                                <th>Date Due
-                                <th>To Do
-                                <th>Priority
-                                <th>Completed
-                            </tr> -->
-                        </thead>
-                        <tbody>
-                        </tbody>
-                                <tr>
-                                    <td>Date here<br />
-                                    <td>My to do will appear here <br />
-                                    <td>! / !! / !!! <br />
-                                    <td> <input type="checkbox" name="completed" value="Check"> <br />
-                                </tr>
-                                <tr>
-                                    <td>Date here<br />
-                                    <td>My to do will appear here <br />
-                                    <td>! / !! / !!! <br />
-                                    <td> <input type="checkbox" name="completed" value="Check"> <br />
-                                </tr>
-                                <tr>
-                                    <td>Date here<br />
-                                    <td>My to do will appear here <br />
-                                    <td>! / !! / !!! <br />
-                                    <td> <input type="checkbox" name="completed" value="Check"> <br />
-                                </tr>
-                                <tr>
-                                    <td>Date here<br />
-                                    <td>My to do will appear here <br />
-                                    <td>! / !! / !!! <br />
-                                    <td> <input type="checkbox" name="completed" value="Check"> <br />
-                                </tr>
-                    </table>
-                    <br />
-                
-            <!--SOON DUE PRIORITY TABLE COMPONENT-->
-                <table border="black">
-                        <thead> 
-                                <col width="80">
-                                <col width="400">
-                                <col width="100">
-                                <col width="80">
-                            <!-- <tr> 
-                                <th>Date Due
-                                <th>To Do
-                                <th>Priority
-                                <th>Completed
-                            </tr> -->
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Date here<br />
-                                <td>My to do will appear here <br />
-                                <td>! / !! / !!! <br />
-                                <td> <input type="checkbox" name="completed" value="Check"> <br />
-                            </tr>
-                            <tr>
-                                <td>Date here<br />
-                                <td>My to do will appear here <br />
-                                <td>! / !! / !!! <br />
-                                <td> <input type="checkbox" name="completed" value="Check"> <br />
-                            </tr>
-                            <tr>
-                                <td>Date here<br />
-                                <td>My to do will appear here <br />
-                                <td>! / !! / !!! <br />
-                                <td> <input type="checkbox" name="completed" value="Check"> <br />
-                            </tr>
-                        </tbody>
-                    </table>
-                    <br />
-                    <br />
-
-
-
-
+    
+    <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border: 1px solid">
+                ol-lg-3 col-md-4 col-sm-6
+            </div>
+            
+          <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border: 1px solid">
+                ol-lg-3 col-md-4 col-sm-6
+            </div>
+            
+             <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border: 1px solid">
+                ol-lg-3 col-md-4 col-sm-6
+            </div>
+            
+             <div class="col-lg-3 col-md-4 col-sm-6" style="background-color:yellow; border: 1px solid">
+                ol-lg-3 col-md-4 col-sm-6
+            </div>
+           </div>
 
 
         </div>
