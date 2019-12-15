@@ -3,6 +3,10 @@ body {
 
 }
 
+.container-fluid{
+    padding: 3% 5%;
+}
+
 #title{
 background-color: lightblue;
 }
