@@ -1,25 +1,62 @@
 
-        <section>
-                <form>
-                    SET PRIORITY:
-                    <input type="radio" name="priority" value="Low" checked> !
-                    <input type="radio" name="priority" value="Medium"> !!
-                    <input type="radio" name="priority" value="High"> !!! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    DATE DUE:
-                    <input type="date" name="chosenDate"> <br/>
-                    <br />
-                    TASK:
-                    <input type="text" placeholder="Enter your task here" size="60"> <br />
-                    <br />
-                    ADDITIONAL NOTES: <br /><textarea name=“message”></textarea>
-                    <button type="button">Add to list!</button> 
-                </form>
-            </section>
-            <div>
-                <br />
+       <!DOCTYPE html>
+       <html>
+           <head>
+               <meta charset="utf-8">
+               <title>Lotus Flow</title>
+               <!--Bootstrap link below-->
+               <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+               <!--My Stylesheet link below-->
+               <link href="style.css" rel="stylesheet" type="text/css" />
+       
+               <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+               <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+               <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+       
+               <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
+           </head>
+
+           <section id="title">
+            <div class="container">
+<!--CREATING MY NAVBAR-->
+<nav class="navbar navbar-light navbar-expand-lg navbar-dark">
+
+<!--RENDER THE BRAND FIRST: Will display this first and to the left-->
+        <a class="navbar-brand" href="">Lotus Flow</a>
+    <!--CREATING THE HAMBURGER NAV BUTTON FOR WHEN SCREEN IS NARROWER: The 'id' allows us to target a specific div to expand and collapse-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="">Nav1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Nav2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Nav3</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+
+
+      <!--TITLE-->
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+            <h1>To Do List Title</h1>
+            
+        </div>  
+   
     
                 <!--SOON DUE PRIORITY TABLE COMPONENT-->
-                <div class="due-soon"></div>
+                <!-- <div>
                     <table border="black">
                             <thead> 
                                     <col width="80">
@@ -49,7 +86,34 @@
                             </tbody>
                         </table>
                        <br />
-                    </div>
+                    </div> -->
+                   
+                        <div class="row">
+                          <div class="col-3">
+                            Date Due
+                          </div>
+                          <div class="col-6">
+                            To Do
+                          </div>
+                          <div class="col-2">
+                            Priority
+                          </div>
+                          <div class="col-1">
+                            <input type="checkbox" name="completed" value="Check">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            1 of 3
+                          </div>
+                          <div class="col">
+                            2 of 3
+                          </div>
+                          <div class="col">
+                            3 of 3
+                          </div>
+                        </div>
+
                 <!--SOON DUE PRIORITY TABLE COMPONENT-->
                     <table border="black">
                             <thead> 
@@ -135,11 +199,42 @@
     
     
     
+                       
+                            <div class="col-4"
+                                <div class="row" id="options">
+                    
+                                    <form>
+                                        SET PRIORITY:
+                                        <input type="radio" name="priority" value="Low" checked> !
+                                        <input type="radio" name="priority" value="Medium"> !!
+                                        <input type="radio" name="priority" value="High"> !!! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                       
+                                        DATE DUE:
+                                        <input type="date" name="chosenDate"> <br/>
+                                        <br />
+                    
+                                        TASK:
+                                        <input type="text" placeholder="Enter your task here" size="60"> <br />
+                                        <br />
+                    
+                                        ADDITIONAL NOTES: 
+                                        <br />
+                                        <textarea name=“message”></textarea>
+                                        <button type="button">Add to list!</button> 
+                                    </form>
+                                
+                            </div>
+                            </div>  
+                                <div>
+                                    <br />
+
+
     
             </div>
     
-    
+        </div>
+   
         </body>
-    
+
     </html>
     

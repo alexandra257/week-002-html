@@ -10,3 +10,19 @@ body {
 #title{
 background-color: lightblue;
 }
+
+
+#toDoTitle{
+    margin-top: 30px;
+
+}
+
+
+#colHead{
+    margin-top: 10px;
+}
+
+
+#dummyTableText{
+    margin: 10px 2px 10px 2px;
+}
