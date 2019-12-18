@@ -19,7 +19,7 @@
 
            <section id="title">
                <!--FLUID STRETCHES TO FILL SCREEN-->
-            <div class="container-fluid">
+            <div class="container">
 
 
 <!--CREATING MY NAVBAR-->
@@ -57,7 +57,7 @@
 
 
 
-         <div class="col-7">
+         <div class="col-lg-7 col-md-12 col-sm-12">
 
 
 
@@ -68,7 +68,7 @@
 
              <div class="row" id="colHead">
             
-                <div class="col-3">Date Due </div>
+                <div class="col-">Date Due </div>
                 <div class="col-5">To Do </div>
                 <div class="col-2">Priority </div>
                 <div class="col-2" id="complete">Complete </div>
@@ -121,8 +121,60 @@
 
 
 <!--CREATING NEW COLUMN TO DISPLAY PARALEL TO TABLE-->
-        <div class="col-5">
+        <div class="col-lg-5 col-md-12 col-sm-12">
 
                 <div class="row" id="toDoTitle">
                 <h1>Add a To Do</h1>
                 </div>
+
+
+
+                <div class="row" id="options">
+                    
+                    <form>
+
+                            TASK:
+                            <input type="text" placeholder="Enter your task here" size="50"> <br />
+                            <br />
+
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="row">SET PRIORITY:&nbsp;&nbsp;
+
+
+                                        <div class="btn-group">
+                                                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Small button
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="#">Low</a>
+                                                        <a class="dropdown-item" href="#">Medium</a>
+                                                        <a class="dropdown-item" href="#">High</a>
+                                                      </div>
+                                                <div class="dropdown-menu">
+
+
+
+                            <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                        </div>
+                    
+
+
+                        <div class="row">
+                            DATE DUE:
+
+                            <input type="date" name="chosenDate"> <br/>
+
+                            <br />
+
+                        </div>
+        
+                           
+        
+                            ADDITIONAL NOTES: 
+                            <br />
+                            <textarea name=“message”></textarea>
+                            <button type="button">Add to list!</button> 
+
+
+                    </form>
+                     </div>
