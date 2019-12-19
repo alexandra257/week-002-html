@@ -57,9 +57,7 @@
     <div class="row">
 
 
-
          <div class="col-lg-7 col-md-12 col-sm-12">
-
 
 
             <div class="row" id="toDoTitle">
@@ -69,12 +67,11 @@
 
              <div class="row" id="colHead">
             
-                <div class="col-">Date Due </div>
+                <div class="col-3">Date Due </div>
                 <div class="col-5">To Do </div>
                 <div class="col-2">Priority </div>
                 <div class="col-2" id="complete">Complete </div>
              </div>
-
 
 
              <div class="row" class="dummyTableText">
@@ -135,59 +132,77 @@
 
 
 <!--CREATING A ROW TO CONTAIN THE TO DO INPUT BAR-->
-                <div class="row" id="options">
-                    
-                    <form>
+<div class="row" id="options">
+     <div class="col-lg-12 col-md-12 col-sm-12">
 
-        
-
-                            <!--CREATING A ROW TO CONTAIN THE TO DO INPUT BAR-->
-                            <div class="input-group mb">
-                                    <div class="input-group-prepend">
-                                      <div class="input-group-text" id="inputGroup-sizing-default">Task:</div>
-                                    </div>
-                                    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-                                  </div>
-
-                         
+   
+            <!--CREATING A ROW TO CONTAIN THE TO DO INPUT BAR-->
+        <div class="input-group mb">
+            <div class="input-group-prepend">
+            <div class="input-group-text" id="inputGroup-sizing-default">Task:</div>
+        </div>
+             <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <br />
 
 
+<!-- <div class="row">SET PRIORITY: &nbsp;&nbsp; -->
+<!-- <div class="row btn-group">
+        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Set Priority
+        </button>
 
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <!-- <div class="row">SET PRIORITY: &nbsp;&nbsp; -->
-                                        <div class="row btn-group">
-                                                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                  Set Priority
-                                                </button>
-                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item" href="#">Low</a>
-                                                        <a class="dropdown-item" href="#">Medium</a>
-                                                        <a class="dropdown-item" href="#">High</a>
-                                                      </div>
+        &nbsp;&nbsp;
 
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Low</a>
+                <a class="dropdown-item" href="#">Medium</a>
+                <a class="dropdown-item" href="#">High</a>
+              </div> -->
+        <div class="row"> 
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            Set Priority:&nbsp;
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> !
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> !!
+            </label>
+            <label class="btn btn-primary">
+            <input type="radio" name="options" id="option3" autocomplete="off"> !!
+        </label>
+    </div>
+    </div>
 
+               
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8">
+                Due Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="date" name="chosenDate"> <br/>
+            </div>
+        </div>
+    
+     
 
-                            <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-                        </div>
-                    
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <br />
+            ADDITIONAL NOTES: 
+        </div>
+            
 
+            <div class="row"> 
+                <div class="col-lg-12 col-md-12 col-sm-12">
+            <textarea name=“message”></textarea>
+            <button type="button">Add to list!</button>
+        </div>
+    </div>
+    <br />
 
-                        <div class="row">
-                            DATE DUE:
-
-                            <input type="date" name="chosenDate"> <br/>
-
-                            <br />
-
-                        </div>
-        
-                           
-        
-                            ADDITIONAL NOTES: 
-                            <br />
-                            <textarea name=“message”></textarea>
-                            <button type="button">Add to list!</button> 
-
-
-                    </form>
-                     </div>
+     </div>
+     </div>
+     </div>
+     </div>
+     </div>
+     </div>
